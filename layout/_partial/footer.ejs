@@ -7,8 +7,8 @@
 	<% } %>
 	<% if(theme.author.intro_line1 || theme.author.intro_line2){ %>
 	<section class="info">
-		<p> <%= theme.author.intro_line1 || "" %> <br/>
-			<%= theme.author.intro_line2 || "" %></p>
+		<p> <%= theme.author.intro_line1 %> <br/>
+			<%= theme.author.intro_line2 %></p>
 	</section>
 	 <% } %>
 	<div class="social-font" class="clearfix">
@@ -57,7 +57,7 @@
         </div>
     <% } %>
 
-		<p class="copyright">
+		<p class="copyright" style="margin-top: 10px;">
 		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © <%= new Date().getFullYear() %> 
 		<% if (config.author) { %>
 		<a href="<%= config.root %>about" target="_blank" title="<%= config.author %>"><%= config.author %></a>
